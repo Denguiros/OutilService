@@ -24,8 +24,6 @@ public class OutilService implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		configuration.exposeIdsFor(Outil.class);
-		Outil outil = new Outil();
-		outilRepository.save(outil);
 	}
 	
 
