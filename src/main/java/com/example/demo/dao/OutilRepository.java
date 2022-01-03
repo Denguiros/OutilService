@@ -10,7 +10,7 @@ import com.example.demo.entities.Outil;
 
 @RepositoryRestController
 public interface OutilRepository extends JpaRepository<Outil, Long> {
-	List<Outil> findBySource(String source);
+	Outil findBySource(String source);
 	List<Outil> findAll();
 	Outil findByDate(Date date);
 }
