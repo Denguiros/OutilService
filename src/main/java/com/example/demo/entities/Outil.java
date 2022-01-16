@@ -26,7 +26,9 @@ public class Outil implements Serializable {
 	private long id;
 	@Temporal(TemporalType.DATE)
 	private Date date;
-	private String source;
+	private String codeSource;
+	private String nom;
+	private boolean open;
 
 
 }

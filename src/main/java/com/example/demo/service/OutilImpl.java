@@ -1,6 +1,5 @@
 package com.example.demo.service;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -41,13 +40,16 @@ public class OutilImpl implements IOutilService {
 		return outilRepository.findAll();
 	}
 
-	@Override
-	public Outil findBySource(String source) {
-		return outilRepository.findBySource(source);
-	}
 	
 	@Override
 	public Outil findByDate(Date date) {
 		return outilRepository.findByDate(date);
 	}
+
+	@Override
+	public List<Outil> findByOpen(boolean openSource) {
+		return outilRepository.findByOpen(openSource);
+	}
+
+	
 }
